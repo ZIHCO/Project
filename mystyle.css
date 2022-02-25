@@ -1,0 +1,342 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	position: relative;
+}
+#signinbar{
+	background-color: rgb(21, 84, 154);
+	min-height: 48px;
+	outline: none;
+	font-size: medium;
+	font-weight: 400;
+}
+#clear{
+	height: 100px;
+}
+li{
+	list-style: none;
+}
+#unchanged{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+#nav1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	color: #FFFFFF;
+	width: 25vw;
+	float: right;
+}
+.signinbar_link{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-variant-caps: small-caps;
+	font-family: sans-serif;
+	outline: none;
+}
+#header{
+	width: 100%;
+	background-color: #FFF;
+	height: 100px;
+	display: flex;
+}
+#header_img{
+	padding: 17.3px 30px;
+	float: left;
+
+}
+#menu{
+	float: left;
+}
+#nav2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 40px 0;
+	margin-top: 0;
+	
+}
+#nav2 ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	display: none;
+}
+#nav2 ul ul{
+	display: none;
+}
+nav a:hover{
+    color: rgb(245, 31, 138);
+}
+#nav2 ul li:hover > ul {
+    display: inherit;
+
+}
+#nav2 :hover > ul {
+    display: inherit;
+}
+li > a::after {
+	content: ' \2228';
+	font-size: 12px;
+	font-weight: 800;
+	padding: 10px;
+}
+li > a:only-child::after {
+    content: '';
+}
+li li > a::after {
+	content: '+';
+	font-size: 12px;
+}
+.nav-link{
+	color: rgb(156, 162, 172);
+	text-decoration: none;
+	font-variant-caps: small-caps;
+	font-family: sans-serif;
+	outline: none;
+}
+#dropdown{
+	background-color: #FFF;
+	width:
+}
+#search{
+	float: right;
+	margin: 40px 60px;
+}
+button{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	color: rgb(156, 162, 172);
+	cursor: pointer;
+	background-color: #ddd;
+	border: none;
+}
+.container{
+	background-image: linear-gradient(45deg, rgba(120, 167, 141, 0.7), rgba(233, 202, 216, 0.8) ), url(../Project3/bg.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	color: #FFF;
+	position: relative;
+	height: 500px;
+}
+#form > div{
+	margin-bottom: 10px;
+}
+#email{
+	height: 50px;
+	width: 100%;
+	background-color: #ddd;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	text-align: center;
+	font-size: 16px;
+}
+#form_cont{
+	padding: 50px 50px;
+	color: #FFF;
+	position: absolute;
+	bottom: 0px;
+}
+.button_cont{
+	border-radius: 3px;
+	width: 100px;
+	height: 50px;
+	background-color: rgb(245, 31, 138);
+	color: #FFF;
+	border: none;
+}
+#submit_button{
+	display: flex;
+	justify-content: center;
+}
+#download_api{
+	text-align: center;
+
+}
+#download_api > button{
+	height: 83px;
+	width: 245px;
+	border-radius: 5px;
+}
+.andriod{
+	background-image: url(../Project3/playstore.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+.OS_X{
+	background-image: url(../Project3/applestore.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#our_partners{
+	width: ;
+	text-align: center;
+}
+#our_partners > button{
+	border: none;
+	border-radius: 0;
+	background-color: #FFF;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 60px;
+}
+.mtn{
+	background-image: url(../Project3/mtn.png);
+	width: 60px;
+	margin-right: 80px;
+}
+.glo{
+	background-image: url(../Project3/glo.png);
+	width: 60px;
+	margin-right: 80px;
+}
+.etisalat{
+	background-image: url(../Project3/etisalat.png);
+	width: 68px;
+	margin-right: 80px;
+}
+.airtel{
+	background-image: url(../Project3/airtel.png);
+	width: 132px;
+	margin-right: 80px;
+}
+.smile{
+	background-image: url(../Project3/smile.png);
+	width: 132px;
+	margin-right: 80px;
+}
+.spectranet{
+	background-image: url(../Project3/spectranet.png);
+	width: 132px;
+}
+#pagewrap{
+	background-color: #ddd;
+	width: 100%;
+	text-align: center;
+	top: 10px;
+	bottom: 20px;
+}
+.products{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+	padding: 20px 20px 20px 20px;
+}
+@media (max-width: 800px){
+	.products{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+.products > div{
+	height: 370px;
+	width: 265px;
+	border: 1px solid #ddd;
+	background-color: #FFF;
+}
+#print_card{
+	grid-area: 2/4/3/5;
+}
+#print_card > div{
+	background-image: url(../Project3/print_card.png);
+	background-position: center;
+	width: 100%;
+	height: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#buy_data > div{
+	background-image: url(../Project3/data.png);
+	background-position: center;
+	width: 100%;
+	height: 50%;
+	background-size: contain;
+}
+#buy_airtime > div{
+	background-image: url(../Project3/airtime.png);
+	background-position: center;
+	width: 100%;
+	height: 50%;
+	background-size: contain;
+}
+#tv_bills > div{
+	background-image: url(../Project3/tv_bills.png);
+	background-position: center;
+	width: 100%;
+	height: 53%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#electric_bills > div{
+	background-image: url(../Project3/electric_bills.png);
+	background-position: center;
+	width: 100%;
+	height: 40%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#footer{
+	background-color: #000;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 12px;
+	height: 40px;
+}
+.footer_right{
+	float: right;
+	color: rgb(245, 31, 138);
+}
+.footer_left{
+	float: left;
+	color: rgb(156, 162, 172);
+}
+#contact{
+	background-color: #222;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 20px 20px 20px 20px;
+	color: rgb(156, 162, 172);
+	font-size: 16px;
+	font-weight: bold;
+}
+#info{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 10px;
+}
+.contact_link{
+	text-decoration: none;
+	color: rgb(156, 162, 172);
+}
+.grid_format > ul{
+	margin-top: 0;
+}
+.grid_format > ul > li{
+	margin-bottom: 10px;
+}
+#product_list > li::before{
+	content: '>';
+}
+#adverts{
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+}
+#adverts > iframe{
+  max-width: 560px;
+  width: 100%;
+}
